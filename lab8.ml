@@ -238,7 +238,7 @@ Exercise 10: Register the receieve_report listener to listen for the
 newswire event.
 ......................................................................*)
 
-let f = add_listener newswire receieve_report ;;
+let f = add_listener newswire receive_report ;;
 
 
 (* Here are some new headlines to use for testing this part. *)
