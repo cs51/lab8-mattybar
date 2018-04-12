@@ -230,7 +230,8 @@ waiting for the publish event.
 ......................................................................*)
 
 let receive_report (s : string) : unit = 
-  let _ = add_listener publish (fun () -> Printf.printf "Verified report %s/n" s) in () ;;
+  let _ = add_listener publish (fun () -> fakeNewsNetwork s);
+  let _ = add_listener publish (fun () -> buzzFake s);
 
 (*......................................................................
 Exercise 10: Register the receieve_report listener to listen for the
